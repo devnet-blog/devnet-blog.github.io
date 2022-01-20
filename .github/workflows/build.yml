@@ -29,15 +29,16 @@ jobs:
         id: run-pelican
         run: |
           pelican content --output output --settings publishconf.py
-      - name: Prepare commit
+      - name: Push to GitHub Pages
         id: push-to-gh-pages
         run: |
           git config --global user.name "Workflow"
           git config --global user.email "workflow@github.io"
           git add output/
           git commit --amend --no-edit
-
-      - name: Push to GitHub Pages
-        id: push-to-deploy-branch
-        run: git push origin deploy --force
+          git push origin deploy --force
+      - name: Notice
+        id: push-to-gh-pages
+        run: |
+          echo '::notice:: Site deployed.'
 
