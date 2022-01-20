@@ -29,14 +29,15 @@ jobs:
         id: run-pelican
         run: |
           pelican content --output output --settings publishconf.py
-      - name: Push to GitHub Pages
-        id: push-to-gh-pages
-        run: |
-          git config --global user.name github-actions
-          git config --global user.email github-actions@github.com
-          git add output/
-          git commit --amend --no-edit
-          git push origin main:deploy --force
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: deploy
+          publish_dir: ./output
+          user_name: 'deploy-bot'
+          user_email: 'deploy-bot@noreply.github.io'
       - name: Notice
         run: |
           echo '::notice:: Site deployed.'
