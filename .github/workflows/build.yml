@@ -38,7 +38,6 @@ jobs:
           git commit --amend --no-edit
           git push origin deploy --force
       - name: Notice
-        id: push-to-gh-pages
         run: |
           echo '::notice:: Site deployed.'
 
