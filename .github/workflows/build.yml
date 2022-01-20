@@ -39,5 +39,5 @@ jobs:
 
       - name: Push to GitHub Pages
         id: push-to-deploy-branch
-        run: git push origin master:deploy --force
+        run: git push origin deploy --force
 
