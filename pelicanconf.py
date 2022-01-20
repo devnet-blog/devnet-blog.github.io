@@ -9,13 +9,14 @@ PATH = 'content'
 THEME = 'theme'
 ARTICLE_PATHS = ['articles']
 PAGE_PATHS = ['pages']
-LOAD_CONTENT_CACHE = False
-OUTPUT_PATH = 'output/'
+OUTPUT_PATH = 'local_output/'
 
-STATIC_PATHS = ['images', 'extra/CNAME']
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+STATIC_PATHS = ['images', 'extra/CNAME', 'extra/.nojekyll']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
+                       'extra/.nojekyll': {'path':'.nojekyll'}}
 
 HOME_COVER = '/images/main_header.jpg'
+HEADER_COVER = HOME_COVER
 
 MARKDOWN = {
     'extension_configs': {
@@ -31,6 +32,8 @@ MARKDOWN = {
 }
 TIMEZONE = 'Europe/Warsaw'
 
+DISPLAY_PAGES_ON_MENU = True
+
 DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
@@ -41,8 +44,5 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('GitHub', 'https://github.io/devnet-blog'),)
+SOCIAL = (('github', 'https://github.io/devnet-blog'),)
 DEFAULT_PAGINATION = 6
-
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True

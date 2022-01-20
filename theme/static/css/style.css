@@ -307,21 +307,21 @@ th {
 }
 
 @font-face {
-    font-family: 'Fira Sans';
+    font-family: 'Fira Code';
     font-style: normal;
     font-weight: 400;
     src: local("Fira Sans"), local("FiraSans-Regular"), url("//fonts.gstatic.com/s/firasans/v5/EjsrzDkQUQCDwsBtLpcVQZBw1xU1rKptJj_0jans920.woff2") format("woff2"), url("//fonts.gstatic.com/s/firasans/v5/EjsrzDkQUQCDwsBtLpcVQbO3LdcAZYWl9Si6vvxL-qU.woff") format("woff")
 }
 
 @font-face {
-    font-family: 'Fira Sans';
+    font-family: 'Fira Code';
     font-style: normal;
     font-weight: 500;
     src: local("Fira Sans Medium"), local("FiraSans-Medium"), url("//fonts.gstatic.com/s/firasans/v5/zM2u8V3CuPVwAAXFQcDi4Bampu5_7CjHW5spxoeN3Vs.woff2") format("woff2"), url("//fonts.gstatic.com/s/firasans/v5/zM2u8V3CuPVwAAXFQcDi4KRDOzjiPcYnFooOUGCOsRk.woff") format("woff")
 }
 
 @font-face {
-    font-family: 'Fira Sans';
+    font-family: 'Fira Code';
     font-style: normal;
     font-weight: 700;
     src: local("Fira Sans Bold"), local("FiraSans-Bold"), url("//fonts.gstatic.com/s/firasans/v5/DugPdSljmOTocZOR2CItOhampu5_7CjHW5spxoeN3Vs.woff2") format("woff2"), url("//fonts.gstatic.com/s/firasans/v5/DugPdSljmOTocZOR2CItOqRDOzjiPcYnFooOUGCOsRk.woff") format("woff")
@@ -495,7 +495,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Code', sans-serif;
     text-rendering: optimizeLegibility;
     color: #000
 }
@@ -554,7 +554,7 @@ ol>li:before {
     position: absolute;
     width: 1.5em;
     margin-left: -2em;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Code', sans-serif;
     font-size: 1em;
     font-weight: 500;
     line-height: 1.5em;
@@ -762,7 +762,7 @@ table td {
 }
 
 table th {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Code', sans-serif;
     font-weight: 500;
     font-size: 0.75em;
     line-height: 1.25em;
@@ -898,7 +898,7 @@ img {
     z-index: 10;
     margin: 0;
     padding: 0;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Code', sans-serif;
     font-weight: 700;
     font-size: 2em;
     line-height: 1em;
@@ -981,11 +981,13 @@ img {
 }
 
 .nav-button#home-button {
-    left: 0
+    left: 40%
+    bottom: 0
 }
 
 .nav-button#menu-button {
-    right: 0
+    right: 40%
+    bottom: 0
 }
 
 .nav-button a {
@@ -994,7 +996,7 @@ img {
     margin-bottom: 1em;
     padding: 0.5em 1.25em;
     border: 1px solid #c2c7cc;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Code', sans-serif;
     font-size: 0.75em;
     line-height: 1.666em;
     text-shadow: none;
@@ -1047,7 +1049,7 @@ img {
     border-left: 1px solid #e5e4e1;
     z-index: 400;
     overflow: hidden;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Code', sans-serif;
     box-shadow: inset -2px 0 7px rgba(0, 0, 0, 0.1);
     transform: translate3d(16em, 0, 0);
     transition: all ease-out 0.25s
@@ -1214,7 +1216,7 @@ img {
 #footer {
     position: relative;
     z-index: 20;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Code', sans-serif;
     line-height: 1em;
     padding-bottom: 6em
 }
@@ -1403,7 +1405,7 @@ img {
     z-index: 10;
     display: block;
     margin-bottom: 1.333em;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Code', sans-serif;
     font-size: 0.75em;
     font-weight: 400;
     line-height: 1.333em;
@@ -1506,7 +1508,7 @@ img {
 .post-tags {
     max-width: 75%;
     float: left;
-    font-family: 'Fira Sans', sans-serif
+    font-family: 'Fira Code', sans-serif
 }
 
 .post-tags a {
@@ -1562,7 +1564,7 @@ img {
 
 .post-author-bio {
     padding-left: 25%;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Code', sans-serif;
     font-size: 0.75em;
     line-height: 1.333em
 }
@@ -1620,7 +1622,7 @@ img {
     margin: 0;
     padding: 0.5em 1.25em;
     border: 1px solid #c2c7cc;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Code', sans-serif;
     font-size: 0.75em;
     line-height: 1.333em;
     color: #8a9199;
@@ -1730,7 +1732,7 @@ img {
     height: 2em;
     margin: 0;
     padding: 2em 0;
-    font-family: 'Fira Sans', sans-serif
+    font-family: 'Fira Code', sans-serif
 }
 
 .pagination:after {
