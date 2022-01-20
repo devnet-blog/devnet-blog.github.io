@@ -24,8 +24,11 @@
 
 
   <!-- Custom fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+<!--  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />-->
+<!--  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,7 +58,7 @@
 <meta prefix="og: http://ogp.me/ns#" property="article:modified_time" content=""/>
 <meta prefix="og: http://ogp.me/ns#" property="article:author" content="./author/kamil-urbanek-damian-dec.html">
 <meta prefix="og: http://ogp.me/ns#" property="article:section" content="articles"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:image" content="./theme/images/post-bg.jpg">
+<meta prefix="og: http://ogp.me/ns#" property="og:image" content=".//images/main_header.jpg">
 
 <!-- Twitter Card -->
 
@@ -72,7 +75,7 @@
     "name": "Kamil Urbanek, Damian Dec",
     "url": "./author/kamil-urbanek-damian-dec.html"
   },
-  "image": "./theme/images/post-bg.jpg",
+  "image": ".//images/main_header.jpg",
   "url": "./first-post.html",
   "description": "The first blog post."
 }
@@ -98,7 +101,7 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header id="post-header" >
+    <header id="post-header" class="has-cover">
       <div class="inner">
         <nav id="navigation">
             <span id="home-button" class="nav-button">
@@ -115,6 +118,7 @@
             | <time datetime="nie 16 stycznia 2022">nie 16 stycznia 2022</time>
         </span>
         <!-- TODO : Modified check -->
+            <div class="post-cover cover" style="background-image: url('.//images/main_header.jpg')">
       </div>
     </header>
 
