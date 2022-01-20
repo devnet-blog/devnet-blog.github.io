@@ -981,13 +981,11 @@ img {
 }
 
 .nav-button#home-button {
-    left: 40%
-    bottom: 0
+    left: 0
 }
 
 .nav-button#menu-button {
-    right: 40%
-    bottom: 0
+    right: 0
 }
 
 .nav-button a {
