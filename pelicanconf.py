@@ -1,22 +1,29 @@
-AUTHOR = 'Kamil Urbanek, Damian Dec'
+
+
+
+AUTHORS = 'Kamil Urbanek, Damian Dec'
 SITENAME = 'DevNet Blog'
 SIDEBAR_DIGEST = 'Combination of Development and Networks'
 SITEURL = 'http://devnet.blog'
 RELATIVE_URLS = True
 
-
 PATH = 'content'
-THEME = 'theme'
 ARTICLE_PATHS = ['articles']
 PAGE_PATHS = ['pages']
 OUTPUT_PATH = 'local_output/'
 
-STATIC_PATHS = ['images', 'extra/CNAME', 'extra/.nojekyll']
+
+THEME = 'theme'
+HOME_COVER = '/images/main_header.jpg'
+HEADER_COVER = HOME_COVER
+
+STATIC_PATHS = ['images',
+                'extra/CNAME',
+                'extra/.nojekyll']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
                        'extra/.nojekyll': {'path':'.nojekyll'}}
 
-HOME_COVER = '/images/main_header.jpg'
-HEADER_COVER = HOME_COVER
+
 
 MARKDOWN = {
     'extension_configs': {
