@@ -824,7 +824,7 @@ img {
 }
 
 #blog-header.has-cover {
-    padding: 9em 0 10em;
+    padding: 3em 0 5em;
     background: #000;
     overflow: hidden;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1)
@@ -837,11 +837,11 @@ img {
 
 .paged #blog-header.has-cover,
 .tag-template #blog-header {
-    padding: 4em 0
+    padding: 3em 0 5em
 }
 
 .author-template #blog-header.has-cover {
-    padding: 6em 0
+    padding: 3em 0 5em
 }
 
 #post-header {
@@ -850,7 +850,7 @@ img {
 }
 
 #post-header.has-cover {
-    padding: 16em 0 2em;
+    padding: 3em 0 5em;
     background: #000;
     overflow: hidden;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1)
