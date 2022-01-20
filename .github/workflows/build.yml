@@ -35,8 +35,8 @@ jobs:
           git config --global user.name "Workflow"
           git config --global user.email "workflow@github.io"
           git add output/
-          git commit --amend --no-edit
-          git push origin deploy --force
+          git commit --amend --no-edit -m "Run ID: ${{ github.run_id }}"
+          git push origin main:deploy --force
       - name: Notice
         run: |
           echo '::notice:: Site deployed.'
