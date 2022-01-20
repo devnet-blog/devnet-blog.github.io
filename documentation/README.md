@@ -9,7 +9,8 @@ Here you will find information in regards to configuration, deployment, styling.
 ### Links
 
 - https://docs.getpelican.com/en/latest/ - Pelican documentation
-- https://github.com/arulrajnet/attila - Used Theme
+- https://github.com/arulrajnet/attila - Documentation for used 
+- https://github.com/peaceiris/actions-gh-pages - GitHub Action for deploying static website
 
 ## Theme
 
