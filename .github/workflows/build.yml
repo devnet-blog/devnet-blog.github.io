@@ -32,10 +32,10 @@ jobs:
       - name: Push to GitHub Pages
         id: push-to-gh-pages
         run: |
-          git config --global user.name "Workflow"
-          git config --global user.email "workflow@github.io"
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
           git add output/
-          git commit --amend --no-edit -m "Run ID: ${{ github.run_id }}"
+          git commit --amend --no-edit
           git push origin main:deploy --force
       - name: Notice
         run: |
