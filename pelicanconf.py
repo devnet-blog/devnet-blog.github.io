@@ -6,7 +6,7 @@ SITENAME = 'DevNet Blog'
 SITESUBTITLE = 'Combination of Development and Networks'
 TIMEZONE = 'Europe/Warsaw'
 AUTHORS = 'Kamil Urbanek, Damian Dec'
-GITHUB_URL = 'https://github.com/devnet-blog'
+# GITHUB_URL = 'https://github.com/devnet-blog'
 SITEURL = 'https://devnet.blog'
 DEFAULT_LANG = 'en'
 
