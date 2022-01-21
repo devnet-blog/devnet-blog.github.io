@@ -7,12 +7,12 @@ SITESUBTITLE = 'Combination of Development and Networks'
 TIMEZONE = 'Europe/Warsaw'
 AUTHORS = 'Kamil Urbanek, Damian Dec'
 GITHUB_URL = 'https://github.com/devnet-blog'
-SITEURL = 'http://devnet.blog'
+SITEURL = 'https://devnet.blog'
 DEFAULT_LANG = 'en'
 
 THEME = 'theme'
 HOME_COVER = '/images/main_header.jpg'
-SITE_LOGO = ""
+# SITE_LOGO = ""
 HEADER_COVER = HOME_COVER
 DEFAULT_PAGINATION = 6
 
@@ -31,6 +31,7 @@ STATIC_PATHS = ['images',
                 'extra/.nojekyll']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
                        'extra/.nojekyll': {'path':'.nojekyll'}}
+
 DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = True
 CATEGORIES_SAVE_AS = 'categories.html'
