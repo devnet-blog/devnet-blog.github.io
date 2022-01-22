@@ -10,10 +10,13 @@ AUTHORS = 'Kamil Urbanek, Damian Dec'
 SITEURL = 'https://devnet.blog'
 DEFAULT_LANG = 'en'
 
-THEME = 'theme'
-HOME_COVER = '/images/main_header.jpg'
-# SITE_LOGO = ""
-HEADER_COVER = HOME_COVER
+THEME = 'theme_cleanblog'
+HEADER_COVER = 'images/main_header.png'
+#
+# CSS_FILE = 'style.css'
+#
+# THEME_STATIC_PATHS = ['static']
+
 DEFAULT_PAGINATION = 6
 
 # To set cover image for a category
@@ -34,8 +37,12 @@ EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},
 
 DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = True
-CATEGORIES_SAVE_AS = 'categories.html'
-AUTHORS_SAVE_AS = 'authors.html'
+
+AUTHOR_URL = 'author/{slug}.html'
+AUTHOR_SAVE_AS = 'author/{slug}.html'
+# CATEGORIES_SAVE_AS = 'categories.html'
+# AUTHORS_SAVE_AS = 'authors.html'
+
 SOCIAL = (('github', 'https://github.io/devnet-blog'),)
 
 MARKDOWN = {
