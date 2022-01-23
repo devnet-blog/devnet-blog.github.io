@@ -1,13 +1,13 @@
-Title: Kamil Urbanek
+Title: Damian Dec
 Date: 21.01.2022  
-Author: Kamil Urbanek 
+Template: author_bio
+Save_as: author/damian-dec.html
+Status: hidden
 
 ### Contanct details
 
-A
-B
-@
-
+email  
+website   
 
 ## Jobs 
 
