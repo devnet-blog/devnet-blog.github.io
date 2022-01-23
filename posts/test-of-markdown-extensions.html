@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-        <meta charset="utf-8">
+            <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-        <title>About</title>
+        <title>Test of Markdown Extensions</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="https://devnet.blog/theme/css/bootstrap.min.css" rel="stylesheet">
@@ -31,11 +31,27 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-                <meta property="og:locale" content="">
+
+
+        <meta name="description" content="Syntax check">
+
+        <meta name="author" content="Kamil Urbanek">
+
+
+	                <meta property="og:locale" content="">
 		<meta property="og:site_name" content="DevNet Blog">
+
+	<meta property="og:type" content="article">
+            <meta property="article:author" content="https://devnet.blog/author/kamil-urbanek.html">
+	<meta property="og:url" content="https://devnet.blog/posts/test-of-markdown-extensions.html">
+	<meta property="og:title" content="Test of Markdown Extensions">
+	<meta property="article:published_time" content="2022-01-23 00:00:00+01:00">
+            <meta property="og:description" content="Syntax check">
+
+            <meta property="og:image" content="https://devnet.blog/images/main_header.jpg">
 </head>
 
-<body class="page-about">
+<body class="article-test-of-markdown-extensions">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -56,7 +72,7 @@
                 <ul class="nav navbar-nav navbar-right">
                         <li><a href="/authors.html">Authors</a></li>
 
-                            <li class="active"><a href="https://devnet.blog/pages/about.html">About</a></li>
+                            <li><a href="https://devnet.blog/pages/about.html">About</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -70,7 +86,12 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
-                        <h1>About</h1>
+                        <h1>Test of Markdown Extensions</h1>
+                        <span class="meta">Posted by
+                                <a href="https://devnet.blog/author/kamil-urbanek.html">Kamil Urbanek</a>
+                             on Sun 23 January 2022
+                        </span>
+                        
                     </div>
                 </div>
             </div>
@@ -81,9 +102,91 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <!-- Post Content -->
     <article>
-        <p>It is a blog which mainly concerns topics related to development, networking and combination of&nbsp;both.</p>
+        <h2 id="table-of-contents">Table of&nbsp;Contents</h2>
+<div class="toc">
+<ul>
+<li><a href="#table-of-contents">Table of&nbsp;Contents</a></li>
+<li><a href="#admonitions">Admonitions</a></li>
+<li><a href="#progress-bar">Progress&nbsp;Bar</a></li>
+</ul>
+</div>
+<h2 id="admonitions">Admonitions</h2>
+<p>Code: </p>
+<div class="highlight"><pre><span></span><code>!!! note
+    This is note
+
+!!! danger
+    Danger note
+
+!!! important &quot;&quot;
+    Important block with no title
+</code></pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is&nbsp;note</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Danger&nbsp;note</p>
+</div>
+<div class="admonition important">
+<p>Important block with no&nbsp;title</p>
+</div>
+<h2 id="progress-bar">Progress&nbsp;Bar</h2>
+<div class="highlight"><pre><span></span><code>[=0% &quot;0%&quot;]{: .candystripe}
+[=5% &quot;5%&quot;]
+[=25% &quot;25%&quot;]
+[=45% &quot;45%&quot;]
+[=65% &quot;65%&quot;]
+[=85% &quot;85%&quot;] {: .candystripe}
+[=100% &quot;100%&quot;]
+</code></pre></div>
+
+<p>
+<div class="progress progress-0plus">
+<div class="progress-bar" style="width:0.00%">
+<p class="progress-label">0%</p>
+</div>
+</div> {: .candystripe}
+<div class="progress progress-0plus">
+<div class="progress-bar" style="width:5.00%">
+<p class="progress-label">5%</p>
+</div>
+</div>
+<div class="progress progress-20plus">
+<div class="progress-bar" style="width:25.00%">
+<p class="progress-label">25%</p>
+</div>
+</div>
+<div class="progress progress-40plus">
+<div class="progress-bar" style="width:45.00%">
+<p class="progress-label">45%</p>
+</div>
+</div>
+<div class="progress progress-60plus">
+<div class="progress-bar" style="width:65.00%">
+<p class="progress-label">65%</p>
+</div>
+</div>
+<div class="progress progress-80plus">
+<div class="progress-bar" style="width:85.00%">
+<p class="progress-label">85%</p>
+</div>
+</div> {: .candystripe}
+<div class="progress progress-100plus">
+<div class="progress-bar" style="width:100.00%">
+<p class="progress-label">100%</p>
+</div>
+</div>
+</p>
     </article>
+
+
+    <hr>
+
             </div>
         </div>
     </div>
