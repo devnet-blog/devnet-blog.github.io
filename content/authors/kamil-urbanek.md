@@ -1,14 +1,22 @@
-Title: Damian Dec
-Date: 21.01.2022  
-Author: Damian Dec 
+Title: Kamil Urbanek
+Date: 21.01.2022
+Template: author_bio
+Save_as: author/kamil-urbanek.html
+Status: hidden
 
-### Contanct details
+## Details
 
-email  
-website   
+--- 
+
+|                    |                             |
+|--------------------|-----------------------------|
+| **Name**           | Kamil Urbanek               |
+| **Location**       | Katowice, Poland            |
+| **Email**          | urbanek.kamil[AT]gmail.com |
+| **website**        | devnet.blog                 |
 
 
-## Jobs 
+## Experience 
 
 ---
 

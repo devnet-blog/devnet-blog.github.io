@@ -16,6 +16,10 @@ Here you will find information in regards to configuration, deployment, styling.
 
 ---
 
+#### CSS
+
+- `post-meta` - Tag's class used for post's footer, which includes Author, Date.
+- 
 
 ### TODO
 
