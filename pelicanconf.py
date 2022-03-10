@@ -24,7 +24,7 @@ AUTHORS = 'Kamil Urbanek, Damian Dec'
 GITHUB_URL = 'https://github.com/devnet-blog'
 DEFAULT_LANG = 'en'
 
-THEME = 'theme_cleanblog'
+THEME = 'theme'
 TYPOGRIFY = True
 HEADER_COVER = 'images/main_header.jpg'
 DIRECT_TEMPLATES = ['index', 'authors', 'categories', 'tags', 'archives']
