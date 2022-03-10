@@ -16,12 +16,23 @@ Here you will find information in regards to configuration, deployment, styling.
 
 ---
 
-#### CSS
+### CSS
 
 - `post-meta` - Tag's class used for post's footer, which includes Author, Date.
-- 
+
 
 ### TODO
+
+
+## DNS and URL
+
+---
+
+### Verification
+
+```commandline
+dig devnet.blog +noall +answer -t A
+```
 
 
 ## Workflows
@@ -56,9 +67,10 @@ Its structure:
 
 ### PyCharm File Template
 
-To help ourself, File Template could be defined. 
-Settings -> Editor -> File and Code Templates
-![img.png](img.png)
+To help ourself, [`PyCharm's File Template`]( https://www.jetbrains.com/help/pycharm/using-file-and-code-templates.html) definition below.    
+_Settings -> Editor -> File and Code Templates_ 
+
+![img.png](img/img.png) 
 
 Template to Copy/Paste
 ```
@@ -72,3 +84,11 @@ Summary: [SUMMARY]
 
 [MAIN CONTENT]
 ```
+
+
+### Logo's height issue
+Main page/index
+![img_1.png](img/img_1.png)
+
+![](img/img_2.png)
+
