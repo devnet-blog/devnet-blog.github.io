@@ -18,7 +18,7 @@ LOAD_CONTENT_CACHE = False
 DELETE_OUTPUT_DIRECTORY = True
 
 SITENAME = 'DevNet Blog'
-SITESUBTITLE = 'Combination of Development and Networks'
+# SITESUBTITLE = 'Combination of Development and Networks'
 TIMEZONE = 'Europe/Warsaw'
 AUTHORS = 'Kamil Urbanek, Damian Dec'
 GITHUB_URL = 'https://github.com/devnet-blog'
@@ -26,7 +26,7 @@ DEFAULT_LANG = 'en'
 
 THEME = 'theme'
 TYPOGRIFY = True
-HEADER_COVER = 'images/main_header.jpg'
+HEADER_COVER = 'images/main_header.png'
 DIRECT_TEMPLATES = ['index', 'authors', 'categories', 'tags', 'archives']
 DEFAULT_PAGINATION = 6
 
@@ -63,9 +63,9 @@ MENUITEMS = (
     ('Authors', SITEURL + '/authors.html'),
 )
 
-# SOCIAL = (
-#     ('github', 'https://github.io/devnet-blog'),
-# )
+SOCIAL = (
+    ('github', 'https://github.io/devnet-blog'),
+)
 
 MARKDOWN = {
     'extension_configs': {
