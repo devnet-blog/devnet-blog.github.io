@@ -2,6 +2,17 @@
 
 List of changes for site deployment process. 
 
+## 0.1.1 - 13.03.2022
+
+### Remove
+
+- Remove file `CNAME` from root directory. Not required here. 
+
+### Change
+
+- Update `requirements.txt`
+
+
 ## 0.1.0 - 13.03.2022
 
 ### Change
