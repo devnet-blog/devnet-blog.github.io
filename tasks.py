@@ -4,7 +4,6 @@ import os
 import shlex
 import shutil
 import sys
-import datetime
 
 from invoke import task
 from invoke.main import program
@@ -24,7 +23,6 @@ CONFIG = {
     'settings_base': SETTINGS_FILE_BASE,
     'settings_publish': 'publishconf.py',
     'deploy_path': SETTINGS['OUTPUT_PATH'],
-    'github_pages_branch': 'deploy',
     # Host and port for `serve`
     'host': 'localhost',
     'port': 8000,
@@ -81,14 +79,8 @@ def serve(c):
 @task
 def reserve(c):
     """`build`, then `serve`"""
-    build(c)
+    rebuild(c)
     serve(c)
-
-
-@task
-def preview(c):
-    """Build production version of site"""
-    pelican_run('-s {settings_publish}'.format(**CONFIG))
 
 
 @task

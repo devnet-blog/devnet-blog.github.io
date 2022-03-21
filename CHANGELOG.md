@@ -2,6 +2,16 @@
 
 List of changes for site deployment process. 
 
+## 0.1.2 - 21.03.2022
+
+### Changed
+
+- Updated `README.md` with more valid and useful content.
+
+### Remove
+
+- From `tasks.py` removed all unnecessary, not used or not required tasks.
+
 ## 0.1.1 - 13.03.2022
 
 ### Remove
