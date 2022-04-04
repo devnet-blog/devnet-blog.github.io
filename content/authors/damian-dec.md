@@ -16,13 +16,13 @@ Status: hidden
 
 ---
 
-####2012-2013 - CDO24 – IT Specialist
+2012-2013 - CDO24 – IT Specialist
 
-####2013-2015 Vattenfall IT Service - Network Specialist
+2013-2015 Vattenfall IT Service - Network Specialist
 
-####2015-2017 ING Tech Poland - Monitoring and Automation
+2015-2017 ING Tech Poland - Monitoring and Automation
 
-####2018-2022 ING Tech Poland – Senior DevNet/Ops engineer
+2018-2022 ING Tech Poland – Senior DevNet/Ops engineer
 
 
 ## Skills/Experience
