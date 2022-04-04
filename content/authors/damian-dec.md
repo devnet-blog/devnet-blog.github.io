@@ -30,13 +30,14 @@ Status: hidden
 ---
 
 - Part of interntional projects:
-  - Incident automation – resolve and analysis network infrastructure incidents in automate way
-  - Solarwinds design and implementation 
-  - Migrate customers to Cisco ACI 
-  - StackStorm – implementation based on Azure pipelines and Openshift 
-  - Design and implement user access management on Cisco ISE 
-  - Manage network equipment via Napalm 
-  - Automation of network devices upgrade 
+  <ul class="square"><li>- Incident automation – resolve and analysis network infrastructure incidents in automate way</li>
+  <li>- Solarwinds design and implementation</li> 
+  <li>- Migrate customers to Cisco ACI </li>
+  <li>- StackStorm – implementation based on Azure pipelines and Openshift</li> 
+  <li>- Design and implement user access management on Cisco ISE</li> 
+  <li>- Manage network equipment via Napalm </li>
+  <li>- Automation of network devices upgrade</li>
+  </ul>
 - Programming / scripting in languages: Python, powershell (MS 10961 certificate);
 - Management Linux and Windows OS via pipelines and manually in regard to application 
 components
