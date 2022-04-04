@@ -2,6 +2,11 @@
 
 List of changes for site deployment process. 
 
+## 0.1.3 - 04.04.2022
+
+- Modified information about authors
+- Add Article set_logger
+
 ## 0.1.2 - 21.03.2022
 
 ### Changed
