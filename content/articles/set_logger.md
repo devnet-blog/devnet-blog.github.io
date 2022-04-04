@@ -10,8 +10,7 @@ code because of very limited information in the console and error messages inacc
 To solve that issue you can set up logger session with relevant debug information during testing your code as below:
 ```python
 def set_logger(console_level='DEBUG', file_level='DEBUG', file_name='debug.log',
-               formatter='%(asctime)-15s %(relativeCreated)6d; %(threadName)-12s; %(levelname)-8s; %(message)s',
-               level=None):
+               formatter='%(asctime)-15s %(relativeCreated)6d; %(threadName)-12s; %(levelname)-8s; %(message)s', level=None):
     """
     Setup logging to file and console from root.
     Args:

@@ -1,6 +1,6 @@
 Title: Damian's post 
 Date: 16.01.2022  
-Summary: Kamil's post.
+Summary: Damian is cool.
 Author: Damian Dec
 
 This is the first Damian's blog post. In close future, new ones will come.
