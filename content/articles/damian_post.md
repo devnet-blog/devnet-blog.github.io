@@ -1,4 +1,4 @@
-Title: First post 
+Title: Damian's post 
 Date: 16.01.2022  
 Summary: Kamil's post.
 Author: Damian Dec
