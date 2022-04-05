@@ -23,6 +23,7 @@ TIMEZONE = 'Europe/Warsaw'
 AUTHORS = 'Kamil Urbanek, Damian Dec'
 GITHUB_URL = 'https://github.com/devnet-blog'
 DEFAULT_LANG = 'en'
+DISQUS_SITENAME = 'devnetblog'
 
 THEME = 'theme'
 TYPOGRIFY = True
