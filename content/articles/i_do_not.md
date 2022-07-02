@@ -1,14 +1,17 @@
-Title: I do not... 
+Title: [DRAFT] I do not... 
 Date: 28.03.2022  
 Author: Kamil Urbanek
 Category: General
-Tags: opinion
+Tags: IMO
 Status: hidden
 Summary: 
 
+> Few personal thoughts
+
+
 ## I do not remember
 
-Well, I tried. I'm still trying. The results vary. I think I found the best solution (for me of course) which has an acceptable results. 
+Well, I tried, still trying to. The results vary. I think, the only solution for now, which has an acceptable results is: 
 
 No need to remember.
 
@@ -16,7 +19,7 @@ My goal is to make the job do it on it's own, without my knowledge nor awareness
 
 ## I do not know
 
-Probably, I will never know everything I need. Neither I'm trying to.
+I will never know everything I need. Neither I'm trying to.
 
 In my opinion, there is no need for it. Usually
 

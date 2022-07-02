@@ -1,6 +1,6 @@
 
 # Development settings
-SITEURL = ""
+SITEURL = 'https://devnet.blog'
 RELATIVE_URLS = True
 
 # RSS and ATOM feeds
@@ -18,16 +18,15 @@ LOAD_CONTENT_CACHE = False
 DELETE_OUTPUT_DIRECTORY = True
 
 SITENAME = 'DevNet Blog'
-# SITESUBTITLE = 'Combination of Development and Networks'
 TIMEZONE = 'Europe/Warsaw'
 AUTHORS = 'Kamil Urbanek, Damian Dec'
-GITHUB_URL = 'https://github.com/devnet-blog'
 DEFAULT_LANG = 'en'
-DISQUS_SITENAME = 'devnetblog'
+DEFAULT_CATEGORY = "General"
+#
 
 THEME = 'theme'
 TYPOGRIFY = True
-HEADER_COVER = 'images/main_header.png'
+HEADER_COVER = 'images/header.png'
 DIRECT_TEMPLATES = ['index', 'authors', 'categories', 'tags', 'archives']
 DEFAULT_PAGINATION = 6
 
@@ -48,25 +47,34 @@ EXTRA_PATH_METADATA = {
 }
 
 # Point to `author` by theirs {name}-{surname} but do not
-AUTHOR_URL = 'author/{slug}.html'
-AUTHOR_SAVE_AS = ''
-AUTHORS_SAVE_AS = 'authors.html'
+AUTHOR_URL = 'authors/{slug}/'
+AUTHOR_SAVE_AS = 'authors/{slug}/index.html'
+AUTHORS_SAVE_AS = 'authors/index.html'
 
 ARTICLE_URL = 'posts/{slug}.html'
 ARTICLE_SAVE_AS = 'posts/{slug}.html'
 
-CATEGORIES_SAVE_AS = 'categories.html'
+CATEGORY_URL = 'categories/{slug}/'
+CATEGORY_SAVE_AS = 'categories/{slug}/index.html'
+CATEGORIES_SAVE_AS = 'categories/index.html'
 
-DISPLAY_PAGES_ON_MENU = True
-DISPLAY_CATEGORIES_ON_MENU = True
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = '{slug}/index.html'
+
+TAG_URL = 'tags/{slug}/'
+TAG_SAVE_AS = 'tags/{slug}/index.html'
+TAGS_SAVE_AS = 'tags/index.html'
+
+ARCHIVES_SAVE_AS = 'archives.html'
+
 
 MENUITEMS = (
-    ('Authors', SITEURL + '/authors.html'),
+    ('Categories', f'/{CATEGORIES_SAVE_AS}'),
+    ('Tags', f'/{TAGS_SAVE_AS}'),
+    ('Authors', f'/{AUTHORS_SAVE_AS}'),
+    ('Posts', f'/{ARCHIVES_SAVE_AS}'),
 )
 
-SOCIAL = (
-    ('github', 'https://github.io/devnet-blog'),
-)
 
 MARKDOWN = {
     'extension_configs': {
@@ -80,3 +88,10 @@ MARKDOWN = {
         'pymdownx.progressbar':{},
     },
     'output_format': 'html5'}
+
+
+# Disabled due to good arguments
+# DISQUS_SITENAME = 'devnetblog'
+# GITHUB_URL = 'https://github.com/devnet-blog'
+# SITESUBTITLE = 'Combination of development, automation and network'
+

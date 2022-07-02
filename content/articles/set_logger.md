@@ -1,6 +1,8 @@
 Title: Set logger 
 Date: 4.04.2022  
 Author: Damian Dec
+Category: Snippets
+Tags: logging, logger
 
 #How to create useful logger
 
