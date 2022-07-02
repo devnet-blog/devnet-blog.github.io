@@ -101,8 +101,6 @@ https://www.jetbrains.com/help/pycharm/using-file-and-code-templates.html) defin
 
 _Settings -> Editor -> File and Code Templates_ 
 
-![img.png](img/img.png) 
-
 Template to Copy/Paste
 ```
 Title: ${FILE_NAME}  

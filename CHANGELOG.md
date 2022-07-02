@@ -2,6 +2,10 @@
 
 List of changes for site deployment process. 
 
+## 0.2.3 - 04.04.2022
+
+- Restore previous header logo image.
+
 ## 0.1.3 - 04.04.2022
 
 - Modified information about authors

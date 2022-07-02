@@ -1,6 +1,7 @@
 Title: How to write articles   
 Date: 10.03.2022   
 Author: Kamil Urbanek   
+Category: 
 Summary: How to write articles   
 
 # How to write articles
@@ -34,73 +35,25 @@ Usage examples of a Markdown features.
 
 ### Admonitions
 
-Available types: `danger`, `error`, `warning`, `caution`, `attention`, `important`, `note`, `hint`, `tip`
+Syntax: 
 
 ```markdown
 !!! danger 
 	This is admonition type: `danger` without title.
 
-!!! error 
-	This is admonition type: `error` without title.
-
-!!! warning 
-	This is admonition type: `warning` without title.
-
-!!! caution 
-	This is admonition type: `caution` without title.
-
-!!! attention 
-	This is admonition type: `attention` without title.
-
-!!! important 
-	This is admonition type: `important` without title.
-
-!!! note 
-	This is admonition type: `note` without title.
-
-!!! hint 
-	This is admonition type: `hint` without title.
-
-!!! tip 
-	This is admonition type: `tip` without title.
-
-!!! warning "Custom warning title"
-	This is admonition type: `warning` with custom title.
-
 !!! tip "Custom tip title"
 	This is admonition type: `tip` with custom title.
 ```
 
+Available types: `danger`, `error`, `warning`, `caution`, `attention`, `important`, `note`, `hint`, `tip`
+
 !!! danger 
 	This is admonition type: `danger` without title.
 
-!!! error 
-	This is admonition type: `error` without title.
-
-!!! warning 
-	This is admonition type: `warning` without title.
-
-!!! caution 
-	This is admonition type: `caution` without title.
-
-!!! attention 
-	This is admonition type: `attention` without title.
-
-!!! important 
-	This is admonition type: `important` without title.
-
-!!! note 
-	This is admonition type: `note` without title.
-
-!!! hint 
-	This is admonition type: `hint` without title.
-
-!!! tip 
-	This is admonition type: `tip` without title.
-
+!!! tip "Custom tip title"
+	This is admonition type: `tip` with custom title.
 
 ### Progress Bars
-
 
 ```markdown
 [=0% "0%"]
