@@ -11,19 +11,11 @@
 
         <!-- Bootstrap Core CSS -->
         <link href="https://devnet.blog/theme/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom CSS -->
         <link href="https://devnet.blog/theme/css/clean-blog.css" rel="stylesheet">
-
-        <!-- Code highlight color scheme -->
-            <link href="https://devnet.blog/theme/css/code_blocks/darkly.css" rel="stylesheet">
-
-
-        <!-- Custom Fonts -->
+        <link href="https://devnet.blog/theme/css/code_blocks/darkly.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -39,6 +31,9 @@
     <meta property="profile:first_name" content="Kamil&nbsp;Urbanek">
     <meta property="profile:last_name" content="">
     <meta property="profile:username" content="kamil-urbanek">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://devnet.blog/theme/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://devnet.blog/theme/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://devnet.blog/theme/favicon/favicon-16x16.png">
 </head>
 
 <body class="page-kamil-urbanek">
@@ -60,9 +55,18 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/authors.html">Authors</a></li>
-
-                            <li><a href="https://devnet.blog/pages/about.html">About</a></li>
+                    <li>
+                        <a href="/categories/index.html">Categories</a>
+                    </li>
+                    <li>
+                        <a href="/tags/index.html">Tags</a>
+                    </li>
+                    <li>
+                        <a href="/authors/index.html">Authors</a>
+                    </li>
+                    <li>
+                        <a href="/archives.html">Posts</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -71,7 +75,7 @@
     </nav>
 
     <!-- Page Header -->
-        <header class="intro-header" style="background-image: url('https://devnet.blog/images/main_header.png')">
+        <header class="intro-header" style="background-image: url('https://devnet.blog/images/header.png')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -205,7 +209,7 @@ Also the TIME_STYLE environment variable sets the default style to&nbsp;use.</p>
         </div>
     </div>
 
-    <hr>
+    <hr class="hr-footer">
 
     <!-- Footer -->
     <footer>
@@ -213,14 +217,6 @@ Also the TIME_STYLE environment variable sets the default style to&nbsp;use.</p>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
-                            <li>
-                                <a href="https://github.io/devnet-blog">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
                     </ul>
 <p class="copyright text-muted">
     Blog powered by <a href="http://getpelican.com">Pelican</a>        &copy;  
@@ -228,25 +224,9 @@ Also the TIME_STYLE environment variable sets the default style to&nbsp;use.</p>
             </div>
         </div>
     </footer>
-
-    <!-- jQuery -->
     <script src="https://devnet.blog/theme/js/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
     <script src="https://devnet.blog/theme/js/bootstrap.min.js"></script>
-
-        <!-- Custom Theme JavaScript -->
-        <script src="https://devnet.blog/theme/js/clean-blog.min.js"></script>
-
-<script type="text/javascript">
-    var disqus_shortname = 'devnetblog';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
+    <script src="https://devnet.blog/theme/js/clean-blog.min.js"></script>
 </body>
 
 </html>
