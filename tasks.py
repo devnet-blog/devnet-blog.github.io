@@ -7,12 +7,12 @@ import sys
 
 from invoke import task
 from invoke.main import program
-from invoke.util import cd
 from pelican import main as pelican_main
 from pelican.server import ComplexHTTPRequestHandler, RootedHTTPServer
 from pelican.settings import DEFAULT_CONFIG, get_settings_from_file
 
 OPEN_BROWSER_ON_SERVE = True
+
 SETTINGS_FILE_BASE = 'pelicanconf.py'
 SETTINGS = {}
 SETTINGS.update(DEFAULT_CONFIG)
@@ -21,11 +21,9 @@ SETTINGS.update(LOCAL_SETTINGS)
 
 CONFIG = {
     'settings_base': SETTINGS_FILE_BASE,
-    'settings_publish': 'publishconf.py',
     'deploy_path': SETTINGS['OUTPUT_PATH'],
-    # Host and port for `serve`
     'host': 'localhost',
-    'port': 8000,
+    'port': 8000
 }
 
 
@@ -47,12 +45,6 @@ def build(c):
 def rebuild(c):
     """`build` with the delete switch"""
     pelican_run('-d -s {settings_base}'.format(**CONFIG))
-
-
-@task
-def regenerate(c):
-    """Automatically regenerate site upon file modification"""
-    pelican_run('-r -s {settings_base}'.format(**CONFIG))
 
 
 @task
@@ -78,9 +70,16 @@ def serve(c):
 
 @task
 def reserve(c):
-    """`build`, then `serve`"""
+    """`clean`, `build`, then `serve`"""
+    clean(c)
     rebuild(c)
     serve(c)
+
+
+@task
+def regenerate(c):
+    """Automatically regenerate site upon file modification"""
+    pelican_run('-r -s {settings_base}'.format(**CONFIG))
 
 
 @task
