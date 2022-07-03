@@ -233,14 +233,14 @@ hr.small {
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  color: #808080;
-  font-size: 15px;
-  font-style: italic;
+  color: #b7b6b6;
+  font-size: 10px;
+  font-style: normal;
   margin-top: 0;
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
-  color: #404040;
+  color: #6e6d6d;
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
