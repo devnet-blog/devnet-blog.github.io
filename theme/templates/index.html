@@ -19,19 +19,6 @@
                             <hr class="small">
                             <span class="subheading">{{ SITESUBTITLE }}</span>
                         {% endif %}
-                        {% if SOCIAL and SHOW_SOCIAL_ON_INDEX_PAGE_HEADER %}
-                            <ul class="list-inline text-center">
-                            {% for name,link in SOCIAL %}
-                                <li>
-                                    <a href="{{ link }}">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-{{ name|lower }} fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                            {% endfor %}
-                            </ul>
-                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -55,23 +42,20 @@
                     {{ article.title }}
                 </h2>
             </a>
-            {% if SHOW_FULL_ARTICLE %}
-                {{ article.content }}
-            {% else %}
-                <p class="article-summary">
-                {% if article.has_summary %}
-                    {{ article.summary }}
-                {% elif article.summary %}
-                    {{ article.summary|striptags|truncate(140) }}
-                {% endif %}
-                </p>
-            {% endif %}
-            <p class="post-meta">Posted by
+            <p class="post-meta">
                 {% for author in article.authors %}
                     <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
                 {% endfor %}
-                 on {{ article.locale_date }}
+                | on {{ article.locale_date }}
             </p>
+            <p class="article-summary">
+            {% if article.has_summary %}
+                {{ article.summary }}
+            {% elif article.summary %}
+                {{ article.summary|striptags|truncate(140) }}
+            {% endif %}
+            </p>
+
             {% include 'comments.html' %}
         </div>
     {% endfor %}
