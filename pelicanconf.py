@@ -72,7 +72,7 @@ MENUITEMS = (
     ('Categories', f'/{CATEGORIES_SAVE_AS}'),
     ('Tags', f'/{TAGS_SAVE_AS}'),
     ('Authors', f'/{AUTHORS_SAVE_AS}'),
-    ('Posts', f'/{ARCHIVES_SAVE_AS}'),
+    ('Archive', f'/{ARCHIVES_SAVE_AS}'),
 )
 
 

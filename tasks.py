@@ -38,7 +38,7 @@ def clean(c):
 @task
 def build(c):
     """Build local version of site"""
-    pelican_run('-s {settings_base}'.format(**CONFIG))
+    pelican_run('--verbose --debug -s {settings_base} '.format(**CONFIG))
 
 
 @task
