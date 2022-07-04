@@ -43,10 +43,17 @@
                 </h2>
             </a>
             <p class="post-meta">
-                {% for author in article.authors %}
+                <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+                | {% for author in article.authors %}
                     <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
-                {% endfor %}
-                | on {{ article.locale_date }}
+                  {% endfor %}
+                | {{ article.locale_date }}
+                  {% if article.tags|length > 0 %}
+                    | {% for tag in article.tags %}
+                        <a href="{{ SITEURL }}/{{ tag.url }}" class="meta-tag">{{ tag }}</a>
+                      {% endfor %}
+                  {% endif %}
+
             </p>
             <p class="article-summary">
             {% if article.has_summary %}

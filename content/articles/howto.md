@@ -1,7 +1,7 @@
 Title: How to write articles   
 Date: 10.03.2022   
 Author: Kamil Urbanek   
-Category: 
+Category: General
 Summary: How to write articles   
 
 # How to write articles

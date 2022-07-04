@@ -24,6 +24,8 @@
 {% endblock header %}
 
 {% block content %}
+    <hr class="post-line">
+    <h1>All post's Categories</h1>
     <ul>
     {% for category, articles in categories %}
         <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>

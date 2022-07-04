@@ -24,6 +24,7 @@
 {% endblock header %}
 
 {% block content %}
+    <hr class="post-line">
     <h1>All Tags</h1>
     {%- for tag, articles in tags|sort %}
         <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})</li>
