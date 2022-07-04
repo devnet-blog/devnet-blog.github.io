@@ -52,6 +52,7 @@ hr.small {
   border-width: 4px;
   border-color: white;
 }
+
 .navbar-custom {
   position: absolute;
   top: 0;
@@ -63,13 +64,21 @@ hr.small {
 .navbar-custom .navbar-brand {
   font-weight: 800;
 }
-.navbar-custom .nav li a {
+.navbar-custom .nav li a,
+.navbar-brand {
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 11px;
   font-weight: 800;
   letter-spacing: 1px;
 }
 @media only screen and (min-width: 768px) {
+
+    .container-center {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
   .navbar-custom {
     background: transparent;
     border-bottom: 1px solid transparent;
@@ -155,18 +164,16 @@ hr.small {
   color: white;
 }
 
-.intro-header > container {
-      max-height: 300px;
-}
 @media only screen and (min-width: 768px) {
 
   .intro-header > container {
-      max-height: 300px;
+      max-height: 320px;
   }
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 60px 0;
+    padding-top: 100px;
+    padding-bottom: 60px;
   }
 }
 .intro-header .site-heading,
@@ -223,8 +230,8 @@ hr.small {
   color: #0085a1;
 }
 .post-preview > a > .post-title {
-  font-size: 30px;
-  margin-top: 30px;
+  font-size: 27px;
+  margin-top: 28px;
   margin-bottom: 10px;
 }
 .post-preview > a > .post-subtitle {
@@ -233,14 +240,14 @@ hr.small {
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  color: #808080;
-  font-size: 15px;
-  font-style: italic;
+  color: #b7b6b6;
+  font-size: 12px;
+  font-style: normal;
   margin-top: 0;
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
-  color: #404040;
+  color: #6e6d6d;
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
@@ -523,4 +530,43 @@ p.bio-meta {
     font-size: 11px;
     font-style: italic;
     text-align: center
+}
+
+.meta-tag {
+background-color: #fdfdfd;
+border: 1px solid #EBEBEB;
+border-radius: 3px;
+padding-left: 3               px;
+padding-right: 3px;
+text-decoration: none;
+}
+
+.meta-tag > a:hover,
+.meta-tag > a:focus {
+text-decoration: none;
+background-color: #e3e3e3;
+}
+
+.article-meta {
+
+  color: #b7b6b6;
+  font-size: 13px;
+  font-style: normal;
+    margin: 6px 0px;
+    text-align: center;
+}
+
+.article-meta > a {
+  color: #b7b6b6;
+  font-size: 13px;
+  font-style: normal;
+}
+.article-meta > a:hover,
+.article-meta > a:focus {
+  text-decoration: none;
+  color: #0085a1;
+}
+
+.post-line {
+margin: 10px 0px;
 }
