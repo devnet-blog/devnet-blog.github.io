@@ -165,6 +165,9 @@ hr.small {
 .intro-header .post-heading,
 .intro-header .page-heading {
   color: white;
+    text-align: center;
+    margin: 20px 0px;
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -179,11 +182,7 @@ hr.small {
     padding-bottom: 60px;
   }
 }
-.intro-header .site-heading,
-.intro-header .page-heading,
-.intro-header .post-heading {
-  text-align: center;
-}
+
 .intro-header .site-heading h1,
 .intro-header .page-heading h1,
 .intro-header .post-heading h1{
