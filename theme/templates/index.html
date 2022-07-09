@@ -15,10 +15,6 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="page-heading">
                         <h1>{{ SITENAME }}</h1>
-                        {% if SITESUBTITLE %}
-                            <hr class="small">
-                            <span class="subheading">{{ SITESUBTITLE }}</span>
-                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -34,6 +30,7 @@
             </div>
         </div>
     {% endif %}
+    <hr class="post-line">
     {% for article in articles_page.object_list %}
         <div class="post-preview">
             <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
@@ -42,11 +39,10 @@
                 </h2>
             </a>
             <p class="post-meta">
-                <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+                <span>{{ article.locale_date }}</span>
                 | {% for author in article.authors %}
                     <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
                   {% endfor %}
-                | {{ article.locale_date }}
                   {% if article.tags|length > 0 %}
                     | {% for tag in article.tags %}
                         <a href="{{ SITEURL }}/{{ tag.url }}" class="meta-tag">{{ tag }}</a>
@@ -63,6 +59,7 @@
             </p>
 
             {% include 'comments.html' %}
+            <hr class="post-line">
         </div>
     {% endfor %}
 

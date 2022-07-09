@@ -24,6 +24,7 @@
 {% endblock header %}
 
 {% block content %}
+    <hr class="post-line">
     {% for author, articles in authors|sort %}
         <div class="post-preview">
             <a href="{{ SITEURL }}/{{ author.url }}" rel="bookmark">

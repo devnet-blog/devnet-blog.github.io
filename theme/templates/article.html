@@ -65,8 +65,6 @@
         <header class="intro-header" style="background-image: url('{{ SITEURL }}/{{ HEADER_COVER }}')">
     {% elif HEADER_COLOR %}
         <header class="intro-header" style="background-color: {{ HEADER_COLOR }}">
-    {% else %}
-        <header class="intro-header" style="background-image: url('{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/post-bg.jpg')">
     {% endif %}
         <div class="container">
             <div class="row">
@@ -83,24 +81,16 @@
 {% block content %}
     <!-- Post Content -->
     <p class="post-meta article-meta">
-        Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
-        | Author:
-        {% for author in article.authors %}
-        <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
-        {% endfor %}
-        | Publish date: {{ article.locale_date }}
+        <span>{{ article.locale_date }}</span>
+        | {% for author in article.authors %}<a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% endfor %}
           {% if article.tags %}
-        | Tags: {% for tag in article.tags %}
-                <a href="{{ SITEURL }}/{{ tag.url }}" class="meta-tag">{{ tag | escape }}</a>
-              {% endfor %}
+        | {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}" class="meta-tag">{{ tag | escape }}</a>{% endfor %}
           {% endif %}
     </p>
     <hr class="post-line">
     <article>
         {{ article.content }}
     </article>
-
-    {% include 'sharing.html' %}
     <hr>
 
     {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
