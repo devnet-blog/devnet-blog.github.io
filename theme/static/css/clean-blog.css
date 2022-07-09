@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Open Sans', 'Lora','Times New Roman',serif;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 500;
   color: #404040;
 }
@@ -166,7 +166,7 @@ hr.small {
 .intro-header .page-heading {
   color: white;
     text-align: center;
-    margin: 20px 0px;
+    margin: 30px 0px;
 
 }
 
@@ -539,7 +539,7 @@ p.bio-meta {
 background-color: #fdfdfd;
 border: 1px solid #EBEBEB;
 border-radius: 3px;
-padding-left: 3               px;
+padding-left: 3px;
 padding-right: 3px;
 text-decoration: none;
 }
@@ -571,5 +571,5 @@ background-color: #e3e3e3;
 }
 
 .post-line {
-margin: 10px 0px;
+margin: 20px 0px;
 }
