@@ -3,14 +3,11 @@ on:
   push:
     branches:
       - main
-    paths:
-      - content/**
-      - theme/**
 
 
 jobs:
   build_job:
-    name: Deploy blog
+    name: Build blog
     runs-on: ubuntu-latest
     steps:
       - name: Install Python
@@ -34,7 +31,7 @@ jobs:
         id: run-pelican
         run: |
           pelican content --output output --settings publishconf.py
-      - name: Deploy
+      - name: Push to GHPage
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
