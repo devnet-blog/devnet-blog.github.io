@@ -1,10 +1,7 @@
-
-# Development settings
 SITEURL = 'https://devnet.blog'
 RELATIVE_URLS = True
 
 # RSS and ATOM feeds
-# Disable FEEDs. For now not used, to check in future if it will be useful/required.
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
@@ -12,7 +9,6 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # CACHING
-# Disable caching. Sometimes interfer with development. To check how it behaves on production.
 CACHE_CONTENT = False
 LOAD_CONTENT_CACHE = False
 DELETE_OUTPUT_DIRECTORY = True
@@ -27,9 +23,11 @@ DEFAULT_CATEGORY = "General"
 THEME = 'theme'
 TYPOGRIFY = True
 HEADER_COVER = 'images/header.png'
-DIRECT_TEMPLATES = ['index', 'authors', 'categories', 'tags', 'archives']
-DEFAULT_PAGINATION = 6
-
+DIRECT_TEMPLATES = ['index',
+                    'authors',
+                    'tags',
+                    'archives']
+DEFAULT_PAGINATION = 7
 
 # Paths and other files
 PATH = 'content'
@@ -46,17 +44,17 @@ EXTRA_PATH_METADATA = {
     'extra/.nojekyll': {'path': '.nojekyll'}
 }
 
-# Point to `author` by theirs {name}-{surname} but do not
 AUTHOR_URL = 'authors/{slug}/'
 AUTHOR_SAVE_AS = 'authors/{slug}/index.html'
 AUTHORS_SAVE_AS = 'authors/index.html'
 
 ARTICLE_URL = 'posts/{slug}.html'
 ARTICLE_SAVE_AS = 'posts/{slug}.html'
+ARCHIVES_SAVE_AS = 'archive.html'
 
-CATEGORY_URL = 'categories/{slug}/'
-CATEGORY_SAVE_AS = 'categories/{slug}/index.html'
-CATEGORIES_SAVE_AS = 'categories/index.html'
+# CATEGORY_URL = 'categories/{slug}/'
+# CATEGORY_SAVE_AS = 'categories/{slug}/index.html'
+# CATEGORIES_SAVE_AS = 'categories/index.html'
 
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
@@ -65,16 +63,12 @@ TAG_URL = 'tags/{slug}/'
 TAG_SAVE_AS = 'tags/{slug}/index.html'
 TAGS_SAVE_AS = 'tags/index.html'
 
-ARCHIVES_SAVE_AS = 'archives.html'
-
-
 MENUITEMS = (
-    ('Categories', f'/{CATEGORIES_SAVE_AS}'),
     ('Tags', f'/{TAGS_SAVE_AS}'),
-    ('Authors', f'/{AUTHORS_SAVE_AS}'),
     ('Archive', f'/{ARCHIVES_SAVE_AS}'),
+    ('Authors', f'/{AUTHORS_SAVE_AS}'),
+    ('About', f'/about/index.html')
 )
-
 
 MARKDOWN = {
     'extension_configs': {
@@ -85,13 +79,6 @@ MARKDOWN = {
             'css_class': 'highlight'},
         'markdown.extensions.toc': {
             'permalink': 'false'},
-        'pymdownx.progressbar':{},
+        'pymdownx.progressbar': {},
     },
     'output_format': 'html5'}
-
-
-# Disabled due to good arguments
-# DISQUS_SITENAME = 'devnetblog'
-# GITHUB_URL = 'https://github.com/devnet-blog'
-# SITESUBTITLE = 'Combination of development, automation and network'
-

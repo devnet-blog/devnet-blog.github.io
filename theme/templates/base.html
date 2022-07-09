@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
-
 <head>
     {% block head %}
         <meta charset="utf-8">
@@ -90,7 +89,6 @@
                 </button>
                 <a class="navbar-brand" href="{{ SITEURL }}/">INDEX</a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav justify-content-center">
@@ -112,39 +110,17 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <hr class="post-line">
-
                 {% block content %}{% endblock content %}
             </div>
         </div>
     </div>
-
     <hr class="hr-footer">
-
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                    {% if SOCIAL %}
-                        {% for name,link in SOCIAL %}
-                            <li>
-                                <a href="{{ link }}">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-{{ name|lower }} fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        {% endfor %}
-                    {% endif %}
-                    </ul>
-                    {% if FOOTER_INCLUDE %}
-                        {% include FOOTER_INCLUDE %}
-                    {% else %}
-                        {% include 'footer.html' %}
-                    {% endif %}
+                    {% include 'footer.html' %}
                 </div>
             </div>
         </div>
