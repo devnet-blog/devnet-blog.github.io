@@ -1,8 +1,8 @@
 # DevNet Blog
 
-**URL: **https://devnet.blog/****
+**https://devnet.blog/****
 
-Here you will find information in regards to site's configuration, deployment, styling and overall information how to.
+Here you will find information in regard to site's configuration, deployment, styling and so on. 
 
 ## Installation
 
@@ -18,20 +18,17 @@ poetry install
 
 Once installed, you may use the commands below:
 
-- Build site, append mode:   
-`invoke build`
-- Remove existing files then build:   
-`invoke rebuild`
-- Serve site on localhost:      
-`invoke serve`
-- Clean build and then serve (`rebuild` and `serve`):   
-`invoke reserve`
+- `invoke build` - Build site, append mode.
+- `invoke rebuild` - Remove existing files then build.
+- `invoke serve` - Serve site on localhost.
+- `invoke reserve` - Clean build and then serve (`rebuild` and `serve`).
 
 Website generated locally is put to `./local_output` folder
+
+
 ## Theme
 
-Currently used theme is [Pelican Clean Blog Theme](https://github.com/gilsondev/pelican-clean-blog). Following modification were implemented in order to adjust it to blog needs:
-- TODO
+Currently used theme is [Pelican Clean Blog Theme](https://github.com/gilsondev/pelican-clean-blog). Many modifications have been made. In Jinja templates and `clean-blog.css`. 
 
 ## Workflow
 
@@ -46,8 +43,6 @@ Definition of the workflow which build whole site and push it to the `deploy` br
 Once generated content has been pushed to `deploy` branch, GitHub Pages default action is executed. It loads the file to a GitHub Pages _server_ under address provided in a Repository settings.
 
 The `CNAME` file tells GHP to make site available under custom DNS.
-
-
 
 
 ## Articles
@@ -74,29 +69,6 @@ Each _Article_ has to match template below:
 ### PyCharm File Template
 
 To help ourself, [`PyCharm's File Template`](
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 https://www.jetbrains.com/help/pycharm/using-file-and-code-templates.html) definition below.    
 
 _Settings -> Editor -> File and Code Templates_ 
@@ -106,10 +78,7 @@ Template to Copy/Paste
 Title: ${FILE_NAME}  
 Date: ${DATE}  
 Author: Name Surname
-Category: 
 Tags: 
-Cover: 
-Summary: [SUMMARY]
 
 [MAIN CONTENT]
 ```
