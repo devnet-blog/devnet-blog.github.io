@@ -30,25 +30,27 @@ CONFIG = {
 @task
 def clean(c):
     """Remove generated files"""
-    if os.path.isdir(CONFIG['deploy_path']):
-        shutil.rmtree(CONFIG['deploy_path'])
-        os.makedirs(CONFIG['deploy_path'])
+    path = CONFIG['deploy_path']
+    if os.path.isdir():
+        print(f"Removing directory: {path}")
+        shutil.rmtree(path)
+        print(f"Creating a empty folder: {path}")
+        os.makedirs(path)
+    print(f"No directory as: {path}")
 
 
 @task
 def build(c, d=False):
     """Build local version of site"""
-    if d:
-        debug = "--verbose --debug"
-    else:
-        debug = ""
+    debug = "--verbose --debug" if d else ""
     pelican_run('{debug} -s {settings_base} '.format(**CONFIG, debug=debug))
 
 
 @task
-def rebuild(c):
+def rebuild(c, d=False):
     """`build` with the delete switch"""
-    pelican_run('-d -s {settings_base}'.format(**CONFIG))
+    debug = "--verbose --debug" if d else ""
+    pelican_run('{debug} -d -s {settings_base}'.format(**CONFIG, debug=debug))
 
 
 @task
@@ -73,11 +75,11 @@ def serve(c):
 
 
 @task
-def reserve(c):
+def reserve(c, d=False):
     """`clean`, `build`, then `serve`"""
-    clean(c)
-    rebuild(c)
-    serve(c)
+    clean(c, d)
+    rebuild(c, d)
+    serve(c, d)
 
 
 @task
